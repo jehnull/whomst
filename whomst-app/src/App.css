@@ -1,6 +1,5 @@
 body {
     background-color: #ebdfd6;
-    padding: 20px;
 }
 
 .board {
@@ -52,4 +51,49 @@ body {
 .card-outer:active .card{
     width: 50%;
     height: 50%;   
+}
+
+h1 {
+    text-align: center;
+}
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+        overflow: hidden;
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: orange;
+        overflow: hidden;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: yellow;
+        overflow: hidden;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: green;
+        overflow: hidden;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: lightblue;
+        overflow: hidden;
+      }
 }

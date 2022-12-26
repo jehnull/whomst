@@ -14,8 +14,8 @@ import tom from './my_pics/tom.PNG';
 import vendetta from './my_pics/vendetta.PNG';
 import wybie from './my_pics/wybie.PNG';
 
-const picArr = {
+const picArr = [
     anthony, demi, kevin, luigi, olivia, puttputt, rabbidpeach, raquelle, reagan, rodrick, simon, spencer, tom, vendetta, wybie
-};
+];
 
 export default picArr;

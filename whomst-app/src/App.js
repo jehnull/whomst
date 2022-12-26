@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import {shuffle} from 'lodash';
 
 function App() {
-  const [cards,setCards] = useState( shuffle([...images]) );
+  const [cards] = useState( shuffle([...images]) );
 
   return (
     <div>

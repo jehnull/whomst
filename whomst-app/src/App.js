@@ -2,13 +2,14 @@ import './App.css';
 import images from './images';
 import React, { useState } from 'react';
 import {shuffle} from 'lodash';
+import title from './my_pics/title.PNG';
 
 function App() {
   const [cards] = useState( shuffle([...images]) );
 
   return (
     <div>
-      <h1>WHOMST</h1>
+      <img id="title" src={title} />
       <div className="board">
         {cards.map((card,index) => {
           return (

@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <img id="title" src={title} />
-      <div className="board">
+      <div className="board" alt="">
         {cards.map((card,index) => {
           return (
             <div className={"card-outer"}>

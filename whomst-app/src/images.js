@@ -31,8 +31,19 @@ import tom from './my_pics/rabbidPeachCard.PNG';
 import vendetta from './my_pics/rabbidPeachCard.PNG';
 import wybie from './my_pics/rabbidPeachCard.PNG';
 
+import sixt from './my_pics/rabbidPeachCard.PNG';
+import sevent from './my_pics/rabbidPeachCard.PNG';
+import eightt from './my_pics/rabbidPeachCard.PNG';
+import ninet from './my_pics/rabbidPeachCard.PNG';
+import twent from './my_pics/rabbidPeachCard.PNG';
+
+// import twent1 from './my_pics/rabbidPeachCard.PNG';
+// import twent2 from './my_pics/rabbidPeachCard.PNG';
+// import twent3 from './my_pics/rabbidPeachCard.PNG';
+// import twent4 from './my_pics/rabbidPeachCard.PNG';
+
 const picArr = [
-    anthony, demi, kevin, luigi, olivia, puttputt, rabbidpeach, raquelle, reagan, rodrick, simon, spencer, tom, vendetta, wybie
+    anthony, demi, kevin, luigi, olivia, puttputt, rabbidpeach, raquelle, reagan, rodrick, simon, spencer, tom, vendetta, wybie, sixt, sevent, eightt, ninet, twent
 ];
 
 export default picArr;

@@ -79,59 +79,19 @@ body {
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
       .board {
-        width: 90vh;
-        max-width: 90vw;
+        width: 80vh;
+        max-width: 80vw;
         display: grid;
         grid-gap: 0px;
-       
+        column-gap: 5px;
         margin: auto;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     
     .card-outer {
         perspective: 1000px;
-        height: calc((170vh) / 5);
-        max-height: calc((170vw)/ 5);
-    }
-    
-    .card {
-        border-radius: 5px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        height: 80%;
-        transform: rotateY(0);
-        transform-style: preserve-3d;
-        transform: all 0.3s;
-
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    }
-
-    #title {
-        width: 300px;
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {    
-      .board {
-        width: 90vh;
-        max-width: 90vw;
-        display: grid;
-        grid-gap: 0px;
-        margin: auto;
-        grid-template-columns: repeat(5, 1fr);
-    }
-    
-    .card-outer {
-        perspective: 1000px;
-        height: calc((125vh) / 5);
-        max-height: calc((125vw)/ 5);
+        height: calc((100vh) / 4);
+        max-height: calc((100vw)/ 4);
     }
     
     .card {
@@ -148,38 +108,39 @@ body {
     }
 
     #title {
-        width: 300px;
+        width: 100px;
         display: block;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
     .board {
-        width: 95vh;
-        max-width: 95vw;
+        width: 85vh;
+        max-width: 85vw;
         display: grid;
         grid-gap: 0px;
-        margin: auto;
+        column-gap: 10px;
+        margin:auto;
         grid-template-columns: repeat(5, 1fr);
     }
     
     .card-outer {
         perspective: 1000px;
-        height: calc((120vh) / 5);
-        max-height: calc((120vw)/ 5);
+        height: calc((110vh) / 5);
+        max-height: calc((110vw)/ 5);
     }
     
     .card {
         border-radius: 5px;
         overflow: hidden;
         position: relative;
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
         transform: rotateY(0);
         transform-style: preserve-3d;
         transform: all 0.3s;
@@ -188,7 +149,48 @@ body {
     }
 
     #title {
-        width: 200px;
+        width: 100px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .board {
+        width: 120vh;
+        max-width: 120vw;
+        display: grid;
+        margin: auto;
+        column-gap: 15px;
+        
+        grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .card-outer {
+        perspective: 1000px;
+        height: calc((200vh) / 7);
+        max-height: calc((200vw)/ 7);
+    }
+    
+    .card {
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 81%;
+        transform: rotateY(0);
+        transform-style: preserve-3d;
+        transform: all 0.3s;
+
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    #title {
+        width: 100px;
         display: block;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -200,18 +202,19 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .board {
-        width: 90vh;
-        max-width: 90vw;
+        width: 140vh;
+        max-width: 140vw;
         display: grid;
-        grid-gap: 0px;
         margin: auto;
-        grid-template-columns: repeat(5, 1fr);
+        column-gap: 15px;
+        
+        grid-template-columns: repeat(7, 1fr);
     }
     
     .card-outer {
         perspective: 1000px;
-        height: calc((115vh) / 5);
-        max-height: calc((115vw)/ 5);
+        height: calc((200vh) / 7);
+        max-height: calc((200vw)/ 7);
     }
     
     .card {
@@ -219,31 +222,40 @@ body {
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 97%;
         transform: rotateY(0);
         transform-style: preserve-3d;
         transform: all 0.3s;
 
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    #title {
+        width: 100px;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .board {
-        width: 200vh;
-        max-width: 200vw;
+        width: 140vh;
+        max-width: 140vw;
         display: grid;
         margin: auto;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-columns: repeat(8, 1fr);
+        column-gap: 15px;
+        
+        grid-template-columns: repeat(7, 1fr);
     }
     
     .card-outer {
         perspective: 1000px;
-        height: calc((290vh) / 8);
-        max-height: calc((290vw)/ 8);
+        height: calc((200vh) / 7);
+        max-height: calc((200vw)/ 7);
     }
     
     .card {
@@ -251,7 +263,7 @@ body {
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 97%;
         transform: rotateY(0);
         transform-style: preserve-3d;
         transform: all 0.3s;

@@ -1,30 +1,20 @@
+import * as React from "react";
 import { StatusBar } from 'expo-status-bar';
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-//const image = {require("whomst-app/assets/background.png")};
+import HomeScreen from "./screens/HomeScreen";
+import AboutScreen from "./screens/AboutScreen";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ImageBackground source={require('./assets/betterBg.png')} resizeMode="repeat" style={styles.image}>
-        <Image source={require('./assets/title.png')} resizeMode="contain" style={styles.title}></Image>
-      </ImageBackground>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="WHOMST - A Guessing Game" component={HomeScreen} />
+        <Stack.Screen name="WHOMST [ACTIVE GAME]" component={AboutScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  image: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  title: {
-    flex: 1,
-    width: '50%',
-    alignSelf: 'center'
-  }
-});

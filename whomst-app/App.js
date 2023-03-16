@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+
+//const image = {require("whomst-app/assets/background.png")};
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Seeing if my changes are made! :-O</Text>
+      <ImageBackground source={require('./assets/betterBg.png')} resizeMode="repeat" style={styles.image}>
+        <Image source={require('./assets/title.png')} resizeMode="contain" style={styles.title}></Image>
+      </ImageBackground>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +17,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#b2c9ab',
-    alignItems: 'center',
+  },
+  image: {
+    flex: 1,
     justifyContent: 'center',
   },
+  title: {
+    flex: 1,
+    width: '50%',
+    alignSelf: 'center'
+  }
 });

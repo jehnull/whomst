@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/whomst/static/js/main.2636be15.js",
+    "main.js": "/whomst/static/js/main.3f34fe21.js",
     "static/js/39.4c8ebc10.js": "/whomst/static/js/39.4c8ebc10.js",
     "favicon.ico": "/whomst/favicon.ico",
     "index.html": "/whomst/index.html",
@@ -8,11 +8,11 @@
     "favicon-16.png": "/whomst/favicon-16.png",
     "manifest.json": "/whomst/manifest.json",
     "serve.json": "/whomst/serve.json",
-    "main.2636be15.js.map": "/whomst/static/js/main.2636be15.js.map",
+    "main.3f34fe21.js.map": "/whomst/static/js/main.3f34fe21.js.map",
     "39.4c8ebc10.js.map": "/whomst/static/js/39.4c8ebc10.js.map"
   },
   "entrypoints": [
     "static/js/39.4c8ebc10.js",
-    "static/js/main.2636be15.js"
+    "static/js/main.3f34fe21.js"
   ]
 }

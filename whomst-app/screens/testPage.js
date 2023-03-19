@@ -6,11 +6,11 @@ export default function HomeScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>OMG the first page!!! 😎😎😋😳🧠⭐✨😭</Text>
         <Button
-            title="Go to About"
-            onPress={() => navigation.navigate("WHOMST [ACTIVE GAME]")}
+            title="Go to Front Page"
+            onPress={() => navigation.navigate("WHOMST - A Guessing Game")}
         />
         <Button
-            title="idk what this button is"
+            title="Go to the Active Game Play"
             onPress={() => navigation.navigate("WHOMST [ACTIVE GAME]")}
         />
         <TouchableOpacity activeOpacity = { .5 } onPress={() => navigation.navigate("WHOMST [ACTIVE GAME]")}>
